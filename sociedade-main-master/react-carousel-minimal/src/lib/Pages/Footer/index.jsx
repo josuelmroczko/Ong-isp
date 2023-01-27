@@ -1,8 +1,8 @@
 import React from 'react';
-import { Social } from '../../Components/Social';
-import { Button } from '../../Components/Button';
-import { LocContainer } from '../../Components/Localization';
-import { Input, TextArea } from '../../Components/Input';
+import { Social } from '../../components/Social/index';
+import { Button } from '../../components/Button/index';
+import { LocContainer } from '../../components/Localization/index';
+import { Input, TextArea } from '../../components/Input/index';
 
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -16,7 +16,7 @@ const schema = yup.object({
     text: yup.string().required('Campo obrigatório'),
 }).required();
 
-const FooterF = () => {
+const Footer1 = () => {
 
     const { control, handleSubmit, formState:{ errors } } = useForm({
         resolver: yupResolver(schema),
@@ -52,4 +52,4 @@ const FooterF = () => {
     )
 }
 
-export { FooterF }
+export { Footer1 }

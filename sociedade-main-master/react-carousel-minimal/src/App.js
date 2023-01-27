@@ -7,6 +7,7 @@ import foto1 from '../src/img1.jpg'
 import foto2 from '../src/img2.jpg'
 import JunteANos from "./lib/components/JunteANos";
 import Projetos from "./lib/components/Projetos";
+import { Footer1 } from "./lib/Pages/Footer";
 
 
 
@@ -99,7 +100,7 @@ function App() {
           <JunteANos/>
           <Projetos/>
         
-          
+          <Footer1/>
           
           
           
